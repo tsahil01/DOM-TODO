@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <!-- Include the Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-6 rounded shadow-md w-full sm:w-96">
+    <h1 class="text-2xl font-bold mb-4">Todo List</h1>
+
+    <!-- Task Input and Add Button -->
+    <div class="flex mb-4">
+      <input type="text" id="taskInput" class="flex-1 border rounded-l py-2 px-4" placeholder="New task...">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded-r" disabled>Add</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList" class="list-disc pl-8">
+      <!-- Tasks will be dynamically added here -->
+    </ul>
+  </div>
+</body>
+</html>
