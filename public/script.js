@@ -10,7 +10,6 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-
 btn.addEventListener('click', ()=>{
     let li = document.createElement('li')
     li.className = 'task'
