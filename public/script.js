@@ -12,10 +12,11 @@ document.addEventListener('keydown', (event) => {
 
 btn.addEventListener('click', ()=>{
     let li = document.createElement('li')
-    li.className = 'task'
+    li.className = 'task list-none'
     const text = document.createTextNode(`${input.value}`)
     li.append(text)
     document.querySelector('#taskList').append(li)
+    input.value = ''
 
     li.addEventListener('click', () => {
         if(li.style.textDecoration == ''){
