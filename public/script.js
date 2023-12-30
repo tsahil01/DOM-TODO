@@ -2,6 +2,15 @@
 let input = document.querySelector('#taskInput')
 const btn = document.querySelector('.add-btn')
 
+document.addEventListener('keydown', (event) => {
+    if (event.ctrlKey) {
+        if (event.key === 'r' || event.key === 'R') {
+            event.preventDefault();
+        }
+    }
+});
+
+
 btn.addEventListener('click', ()=>{
     let li = document.createElement('li')
     li.className = 'task'
